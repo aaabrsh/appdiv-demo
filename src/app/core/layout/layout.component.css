@@ -1,0 +1,12 @@
+.page-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.header {
+  height: 88px;
+}

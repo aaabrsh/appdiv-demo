@@ -1,0 +1,26 @@
+<div class="control-section" id="reswrapper">
+  <ejs-sidebar
+    id="sideTree"
+    class="sidebar-treeview"
+    #sidebarTreeviewInstance
+    [width]="width"
+    [target]="target"
+    [mediaQuery]="mediaQuery"
+    [isOpen]="true"
+  >
+    <div class="main-menu">
+      <div class="table-content">
+        <a routerLink="/home" class="logo">OROMIA MES</a>
+      </div>
+      <div>
+        <ejs-treeview
+          id="mainTree"
+          cssClass="main-treeview"
+          [fields]="fields"
+          expandOn="Click"
+        >
+        </ejs-treeview>
+      </div>
+    </div>
+  </ejs-sidebar>
+</div>
