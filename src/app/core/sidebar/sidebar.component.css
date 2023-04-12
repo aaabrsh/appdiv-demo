@@ -1,4 +1,8 @@
 /* Specifies sample level styles for sidebar*/
+.control-section {
+  font-family: Roboto;
+}
+
 #reswrapper.control-section {
   padding: 0;
 }
@@ -13,8 +17,8 @@
 }
 
 #reswrapper {
-  height: 380px;
-  width: auto;
+  overflow-y: auto;
+  height: 100%;
 }
 
 /*main-menu-header  styles */
@@ -206,6 +210,16 @@
   .e-list-icon
   + .e-list-text {
   padding-left: 20px;
+}
+
+.e-list-icon {
+  height: auto !important;
+  margin-right: 5px !important;
+}
+
+.e-text-content {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .bootstrap4.e-bigger .sidebar-treeview .e-treeview .e-text-content {

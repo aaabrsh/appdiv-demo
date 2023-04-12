@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+    justify-content: right;
+    font-family: "Roboto";
+}
+
+.icon {
+    padding: 20px;
+}
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    border-left: 2px solid gray;
+    padding-left: 20px;
+}
+
+.avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: teal;
+}
+
+.personal-info-container{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    text-align: center; 
+}
+
+.name{
+    font-weight: 700;
+}
+
+.personal-position{
+    color: gray;
+    font-size: 12px;
+}
