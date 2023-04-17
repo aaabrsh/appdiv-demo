@@ -1,0 +1,7 @@
+.header-container{
+    display: flex;
+}
+
+.title{
+    flex-grow: 1;
+}

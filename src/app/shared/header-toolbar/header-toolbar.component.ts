@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header-toolbar',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-toolbar.component.css']
 })
 export class HeaderToolbarComponent {
-
+  @Input() title!: string;
 }

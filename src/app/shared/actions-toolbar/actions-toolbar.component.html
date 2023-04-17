@@ -1,1 +1,29 @@
-<p>actions-toolbar works!</p>
+<div class="toolbar-container">
+  <div>
+    <button ejs-button>
+      <span> icon </span>
+      <span> Add </span>
+    </button>
+    <button ejs-button>
+      <span> icon </span>
+      <span> Print </span>
+    </button>
+    <button ejs-button>
+      <span> icon </span>
+      <span> Export Excel </span>
+    </button>
+  </div>
+  <div>
+    <div>
+      <input type="search" />
+    </div>
+    <div>
+      <select (change)="handleSelectionChange($event)">
+        <option disabled selected>column chooser</option>
+        <option *ngFor="let column of columns" [value]="column">
+          {{ column | titlecase }}
+        </option>
+      </select>
+    </div>
+  </div>
+</div>

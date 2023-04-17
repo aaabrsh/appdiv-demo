@@ -1,1 +1,12 @@
-<p>print-toolbar works!</p>
+<div>
+  <select (change)="handleSelectionChange($event)">
+    <option disabled selected>print options</option>
+    <option *ngFor="let option of printOptions" [value]="option">
+      {{ option | titlecase }}
+    </option>
+  </select>
+  <button (click)="handlePrintClick()">
+    <span>icon</span>
+    <span> Print Report </span>
+  </button>
+</div>
