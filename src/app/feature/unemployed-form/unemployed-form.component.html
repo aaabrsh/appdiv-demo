@@ -1,0 +1,72 @@
+<app-header-toolbar></app-header-toolbar>
+<!-- FORM -->
+<form [formGroup]="unemployedForm" (ngSubmit)="handleFormSubmit()">
+  <div>Basic Info</div>
+  <div>
+    <div>
+      <label for="firstName"></label>
+      <input
+        type="text"
+        placeholder="First Name"
+        name="firstName"
+        id="firstName"
+        formControlName="firstName"
+      />
+    </div>
+    <div>
+      <label for="middleName"></label>
+      <input
+        type="text"
+        placeholder="Middle Name"
+        name="middleName"
+        id="middleName"
+        formControlName="middleName"
+      />
+    </div>
+    <div>
+      <label for="lastName"></label>
+      <input
+        type="text"
+        placeholder="Last Name"
+        name="lastName"
+        id="lastName"
+        formControlName="lastName"
+      />
+    </div>
+    <div>
+      <label for="dob"></label>
+      <input
+        type="date"
+        placeholder="Date of Birth"
+        name="dob"
+        id="dob"
+        formControlName="dob"
+      />
+    </div>
+    <div>
+      <label for="gender"></label>
+      <select name="gender" id="gender" formControlName="gender">
+        <option disabled selected>Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+    <div>
+      <label for="phoneNo"></label>
+      <input
+        type="text"
+        placeholder="Phone Number"
+        name="phoneNo"
+        id="phoneNo"
+        formControlName="phoneNo"
+      />
+    </div>
+  </div>
+
+  <app-address-form [parentForm]="unemployedForm"></app-address-form>
+
+  <div>
+    <button type="submit">Next</button>
+    <button type="reset">Cancel</button>
+  </div>
+</form>

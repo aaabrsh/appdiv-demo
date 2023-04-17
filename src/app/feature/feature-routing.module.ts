@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { UnemployedListComponent } from './unemployed-list/unemployed-list.component';
+import { UnemployedFormComponent } from './unemployed-form/unemployed-form.component';
 
 const routes: Routes = [
   {
@@ -10,8 +12,8 @@ const routes: Routes = [
   {
     path: 'unemployed',
     children: [
-      { path: 'list', component: DashboardComponent },
-      { path: 'form', component: DashboardComponent },
+      { path: 'list', component: UnemployedListComponent },
+      { path: 'form', component: UnemployedFormComponent },
     ],
   },
   {
