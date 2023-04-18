@@ -1530,6 +1530,16 @@
     "@syncfusion/ej2-buttons" "21.1.37"
     tslib "^2.3.0"
 
+"@syncfusion/ej2-angular-calendars@^21.1.38":
+  version "21.1.38"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-angular-calendars/-/ej2-angular-calendars-21.1.38.tgz#74e2601cf919a39641bdf61c9b44379beed43386"
+  integrity sha512-9ToOqq9lIiHJRvGQvCAQH2KOFtohDgFN1Owl8zSERhgq1tEyCj1HXL68Ao0O18NHsHVZmsJdzcSnmgcGStAo8g==
+  dependencies:
+    "@syncfusion/ej2-angular-base" "~21.1.38"
+    "@syncfusion/ej2-base" "~21.1.38"
+    "@syncfusion/ej2-calendars" "21.1.38"
+    tslib "^2.3.0"
+
 "@syncfusion/ej2-angular-dropdowns@^21.1.38":
   version "21.1.38"
   resolved "https://registry.yarnpkg.com/@syncfusion/ej2-angular-dropdowns/-/ej2-angular-dropdowns-21.1.38.tgz#45f6bfdd31ccd26d6f356594b337bf8b2ed5beaa"
@@ -1590,6 +1600,17 @@
   integrity sha512-gGB39ACdKFjDz23sY5Xd3p5GH6BqsBHSgQ5fCRtx/B5kbk3bhqKVw8yAvTM3mHhry0EfaTdL6NXQjT/bxi4nyw==
   dependencies:
     "@syncfusion/ej2-base" "~21.1.37"
+
+"@syncfusion/ej2-calendars@21.1.38":
+  version "21.1.38"
+  resolved "https://registry.yarnpkg.com/@syncfusion/ej2-calendars/-/ej2-calendars-21.1.38.tgz#294add8b092d6735e7c06818291baf4cdf8607aa"
+  integrity sha512-gan0DzNG7bK/bgom2uG5Am+BnBPXedKVor/p3rd7ktBMm1p2va3akt94VR30yezWj3qoYPUR0liZSwfxyVhjCw==
+  dependencies:
+    "@syncfusion/ej2-base" "~21.1.38"
+    "@syncfusion/ej2-buttons" "~21.1.37"
+    "@syncfusion/ej2-inputs" "~21.1.38"
+    "@syncfusion/ej2-lists" "~21.1.37"
+    "@syncfusion/ej2-popups" "~21.1.37"
 
 "@syncfusion/ej2-data@^21.1.38", "@syncfusion/ej2-data@~21.1.37", "@syncfusion/ej2-data@~21.1.38":
   version "21.1.38"

@@ -1,81 +1,14 @@
 <app-header-toolbar title="Unemployed"></app-header-toolbar>
-<!-- FORM -->
-<!-- class="ng-untouched ng-pristine ng-valid" -->
-<form [formGroup]="unemployedForm" (ngSubmit)="handleFormSubmit()">
-  <app-form-header text="Basic Info"></app-form-header>
-  <div>
-    <div>
-      <label for="firstName"></label>
-      <input
-        class="e-input"
-        type="text"
-        placeholder="First Name"
-        name="firstName"
-        id="firstName"
-        formControlName="firstName"
-      />
-    </div>
-    <div>
-      <label for="middleName"></label>
-      <input
-        class="e-input"
-        type="text"
-        placeholder="Middle Name"
-        name="middleName"
-        id="middleName"
-        formControlName="middleName"
-      />
-    </div>
-    <div>
-      <label for="lastName"></label>
-      <input
-        class="e-input"
-        type="text"
-        placeholder="Last Name"
-        name="lastName"
-        id="lastName"
-        formControlName="lastName"
-      />
-    </div>
-    <div>
-      <label for="dob"></label>
-      <!-- <input
-        class="e-input"
-        type="date"
-        placeholder="Date of Birth"
-        name="dob"
-        id="dob"
-        formControlName="dob"
-      /> -->
-      <!-- <ejs-datepicker [value]='dateValue' placeholder='Date of Birth'></ejs-datepicker> -->
-      <ejs-datepicker placeholder='Date of Birth'></ejs-datepicker>
-    </div>
-    <div>
-      <label for="gender"></label>
-      <select name="gender" id="gender" formControlName="gender">
-        <option disabled selected>Gender</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-      </select>
-      <!-- <ejs-dropdownlist id='ddlelement' [dataSource]='data'></ejs-dropdownlist> -->
-    </div>
-    <div>
-      <label for="phoneNo"></label>
-      <input
-        class="e-input"
-        type="text"
-        placeholder="Phone Number"
-        name="phoneNo"
-        id="phoneNo"
-        formControlName="phoneNo"
-      />
-    </div>
+<!-- TABS -->
+<ejs-tab id="element">
+  <div class="e-tab-header">
+    <div>User Info</div>
+    <div>Educational Level</div>
+    <div>Contact Person</div>
   </div>
-
-  <app-address-form [parentForm]="unemployedForm"></app-address-form>
-
-  <div>
-    <button ejs-button type="submit">Next</button>
-    <button ejs-button type="reset">Cancel</button>
+  <div class="e-content">
+    <app-user-info-form></app-user-info-form>
+    <app-educational-level-form></app-educational-level-form>
+    <app-contact-person-form></app-contact-person-form>
   </div>
-</form>
+</ejs-tab>

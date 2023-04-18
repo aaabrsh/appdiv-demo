@@ -8,48 +8,47 @@ import { Component, ViewEncapsulation, Inject, ViewChild } from '@angular/core';
 })
 export class SidebarComponent {
   @ViewChild('sidebarTreeviewInstance')
-
   public data: { [key: string]: Object }[] = [
     {
       nodeId: '01',
       nodeText: 'Dashboard',
-      iconCss: 'icon-microchip icon',
+      // iconCss: 'icon-microchip icon',
       navigateUrl: '/home',
     },
     {
       nodeId: '02',
       nodeText: 'Unemployment',
-      iconCss: 'icon-thumbs-up-alt icon',
+      // iconCss: 'icon-thumbs-up-alt icon',
       navigateUrl: '/home/unemployed/list',
     },
     {
       nodeId: '03',
       nodeText: 'MSE',
-      iconCss: 'icon-th icon',
+      // iconCss: 'icon-th icon',
       navigateUrl: '/home/mse/list',
       nodeChild: [
         {
           nodeId: '03-01',
           nodeText: 'MSE Profile',
-          iconCss: 'icon-circle-thin icon',
+          // iconCss: 'icon-circle-thin icon',
           navigateUrl: '/home/mse-profile/form',
         },
         {
           nodeId: '03-02',
           nodeText: 'Manage Growth Level',
-          iconCss: 'icon-circle-thin icon',
+          // iconCss: 'icon-circle-thin icon',
           navigateUrl: '/home/mse/growth-level/form',
         },
         {
           nodeId: '03-04',
           nodeText: 'Assign MSE',
-          iconCss: 'icon-circle-thin icon',
+          // iconCss: 'icon-circle-thin icon',
           navigateUrl: '/home/assign-mse/list',
         },
         {
           nodeId: '03-03',
           nodeText: 'Assign Training',
-          iconCss: 'icon-circle-thin icon',
+          // iconCss: 'icon-circle-thin icon',
           navigateUrl: '/home/assign-training/list',
         },
       ],
@@ -57,31 +56,31 @@ export class SidebarComponent {
     {
       nodeId: '04',
       nodeText: 'Training Management',
-      iconCss: 'icon-code icon',
+      // iconCss: 'icon-code icon',
       navigateUrl: '/home/trainer/list',
       nodeChild: [
         {
           nodeId: '04-01',
           nodeText: 'Trainer',
-          iconCss: 'icon-arrowhead-up-01 icon',
+          // iconCss: 'icon-arrowhead-up-01 icon',
           navigateUrl: '/home/trainer/list',
         },
         {
           nodeId: '04-02',
           nodeText: 'Training',
-          iconCss: 'icon-circle-thin icon',
+          // iconCss: 'icon-circle-thin icon',
           navigateUrl: '/home/training/list',
         },
         {
           nodeId: '04-03',
           nodeText: 'Evaluate Training',
-          iconCss: 'icon-circle-thin icon',
+          // iconCss: 'icon-circle-thin icon',
           navigateUrl: '/home/training/assessment/form',
         },
         {
           nodeId: '04-04',
           nodeText: 'Training Assessment',
-          iconCss: 'icon-circle-thin icon',
+          // iconCss: 'icon-circle-thin icon',
           navigateUrl: '/home/training/assessment/form',
         },
       ],
