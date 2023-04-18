@@ -6,8 +6,8 @@ import { PrintToolbarComponent } from './print-toolbar/print-toolbar.component';
 import { ListComponent } from './list/list.component';
 import { HeaderToolbarComponent } from './header-toolbar/header-toolbar.component';
 import { AddressFormComponent } from './address-form/address-form.component';
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { FormHeaderComponent } from './form-header/form-header.component';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
 @NgModule({
   declarations: [
@@ -25,6 +25,7 @@ import { FormHeaderComponent } from './form-header/form-header.component';
     ListComponent,
     HeaderToolbarComponent,
     AddressFormComponent,
+    FormHeaderComponent,
   ],
 })
 export class SharedModule {}
